@@ -1,0 +1,132 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e359c;
+      color: #0A3D62;
+    }
+    header {
+      background-color: #0A3D62;
+      color: rgb(255, 255, 255);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .logo{
+        float: left;
+        width: 90px;
+        height: 90px;
+    }
+    .P1 {
+        padding-right:850px;
+    }
+
+    b{
+        font-size: 55px;
+    }
+
+    .b1{
+        font-size: 40px;
+    }
+
+    nav a{
+      color: rgb(255, 255, 255);
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 35px;
+    }
+    
+    a:hover{
+        color: green;
+        font-family: verdana;
+        cursor: pointer;
+    }
+    .hero {
+      background: linear-gradient(to right, rgb(171, 218, 233), rgb(210, 230, 235));
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+            
+.D6{
+	 background: url('IMG-20260310-WA0024.jpg') no-repeat center/cover;
+	margin:auto;
+	height:60%;
+	padding:20px;
+}
+	
+#car img{
+	width:100%;
+	object-fit:contain;
+	height:100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+	position:absolute;
+	top:50%;
+	transform: translateY(-5%);
+	background-color:skyblue;
+}
+
+.carousel-control-prev{
+	left:0;
+}
+ 
+ .carousel-control-next{
+	right:0;
+ }	
+ 
+.container{
+	display:flex;
+	flex-wrap:wrap;
+	gap:10px;
+ }
+    .hero button {
+      background-color: #27AE60;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    button:hover{
+       font-family: verdana;
+       cursor: pointer;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px;
+    }
+    
+.service-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 30%;
+      margin: 10px;
+      text-align: center;
+}
+    footer {
+      background-color: #0A3D62;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-text {
+  position: absolute;       
+  top: 50%;                  
+  left: 30%;                 
+  margin: auto; 
+  background: rgba(0, 0, 0, 0.4);   
+  border-radius: 8px;
+  transform: scale(0.7);
+}
