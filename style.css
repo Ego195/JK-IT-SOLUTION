@@ -60,9 +60,9 @@
 }
 	
 #car img{
-	width:60%;
+	width:50%;
 	object-fit:contain;
-	height:60%;
+	height:50%;
 }
 
 .carousel-control-prev,
