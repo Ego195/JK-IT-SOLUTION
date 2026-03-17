@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Test d'intrusion jk it</title>
+    </head>
+    <body>
+    <header>
+    <img src="Clipped_image_20260313_140735.png" alt="1" class="logo"> <p class="P1"><b>JK IT</b> <b class="b1">SOLUTION</b></p>
+    <nav>
+      <a href="../index.html">Accueil</a>
+      <a href="#">
+        <select  id="ser">
+            <option value=" " style="color:  #0A3D62;">Services</option>
+            <option value=" " class=" ../intrusion/intrusion.html"> -> Tests D'intrusion</option>
+            <option value=" ../vidéo/video.html" class="OP"> -> Video Surveillance </option>
+            <option value=" ../reseau/reseau.html" class="OP"> -> Sécurité Des Réseaux </option>
+            <option value=" ../optimisation/optimisation.html" class="OP"> -> Optimisation Des Reseaux </option>
+            <option value=" ../atelier/atelier.html" class="OP"> -> Formation ET Atelier </option>
+            <option value=" " class="OP"> -> Consultation En lot </option>
+        </select>
+        <script>
+            document.getElementById("ser").addEventListener("change",
+                function(){
+                    var selectedvalue = this.value;
+                    if (selectedvalue){
+                        window.location.href = selectedvalue;
+                    }
+                } );
+                
+        </script>			
+      </a>
+      <a href="../contacte/contact.html">Contact</a>
+      <a href="#">Connexion</a>
+    </nav>
+  </header>
+    
+
+    </body>
+
+
+
+
+
+</html>

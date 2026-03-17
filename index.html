@@ -8,16 +8,55 @@
         <title>JK</title>
 
     </head>
-  <body style="font-family: Arial, sans-serif; background-color: rgb(221, 236, 236); color: #c08e8e;">
+  <body>
   <header>
    <img src="Clipped_image_20260313_140735.png" alt="1" class="logo"> <p class="P1"><b>JK IT</b> <b class="b1">SOLUTION</b></p>
     <nav>
-      <a href="#">Accueil</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-      <a href="#">Connexion</a>
+      <a href="#" id="Ac" class="A1">Accueil</a>
+      <div id="card">
+        <div style="height: 20%; background-color: black;"><h5>Welcome</h5> <i style="font-size: 16px;"> jk it solution</i></div> <br>
+        <ul>
+            <li><a href="#" class="Li">OP1</a></li>
+            <li><a href="#" class="Li">OP2</a></li>
+            <li><a href="#" class="Li">OP3</a></li>
+            <li><a href="#" class="Li">OP4</a></li>
+        </ul>
+        <br> <br><br><br>
+        <footer style="background-color: black; height: 2px;"> <p style="font-size: 7px;"> &copy; 2026 JK Services - Tous droits réservés</p></footer>
+      </div>
+      <script>
+        document.getElementById("Ac").addEventListener("click", function(e) {
+            e.preventDefault();
+            document.getElementById("card").classList.toggle("active");
+        } );
+      </script>
+
+      <a href="#" class="A1">
+        <select  id="ser">
+            <option value=" ">Services</option>
+            <option value=" intrusion/intrusion.html" class="OP"> -> Tests D'intrusion</option>
+            <option value=" vidéo/video.html" class="OP"> -> Video Surveillance </option>
+            <option value=" reseau/reseau.html" class="OP"> -> Sécurité Des Réseaux </option>
+            <option value=" optimisation/optimisation.html" class="OP"> -> Optimisation Des Reseaux </option>
+            <option value=" atelier/atelier.html" class="OP"> -> Formation ET Atelier </option>
+            <option value=" lot/lot.html" class="OP"> -> Consultation En lot </option>
+        </select>
+        <script>
+            document.getElementById("ser").addEventListener("change",
+                function(){
+                    var selectedvalue = this.value;
+                    if (selectedvalue){
+                        window.location.href = selectedvalue;
+                    }
+                } );
+                
+        </script>			
+      </a>
+      <a href="contacte/contact.html" class="A1">Contact</a>
+      <a href="#" class="A1">Connexion</a>
     </nav>
   </header>
+  <br><br> <br> <br> &copy; Ego <br> <br> <br>
   <div class="D6">  
     <br> <br> <br> <br> <br> 
         <div class="carousel slide D2" id="car" data-bs-ride="carousel">
@@ -74,6 +113,44 @@
       <p>Gérez vos équipements efficacement.</p>
     </div>
   </section>
+
+  <button id="bt">&#8679</button>
+
+  <script>
+    const card = document.getElementById("card");
+    const logo = document.querySelector(".logo");
+    const header = document.querySelector("header");
+    const bt = document.getElementById("bt");
+    let  lastscroll = 0;
+    window.addEventListener("scroll", () => {
+        let currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastscroll) {
+            header.classList.add("hidden");
+            logo.classList.add("down");
+            card.classList.add("cd")
+
+        }else {
+            header.classList.remove("hidden");
+            logo.classList.remove("down");
+            card.classList.remove("cd")
+        }
+
+        lastscroll = currentScroll;
+
+        if (currentScroll > 200) {
+            bt.classList.add("show");
+        } else {
+            bt.classList.remove("show");
+        }
+    });
+    bt.addEventListener("click", () => {
+        window.scrollTo({
+            top : 0,
+            behavior : "smooth"
+        });
+    });
+  </script>
 
   <footer>
     <p>&copy; 2026 JK Services - Tous droits réservés</p>
